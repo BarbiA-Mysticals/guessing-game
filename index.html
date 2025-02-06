@@ -6,9 +6,31 @@
     <title>Guessing Game </title>
 </head>
 <body>
-    <button>Option A</button>
-    <button>Option B</button>
-    <button>Option C</button>
+    How should you NOT refer to JavaScript?
+    <button onclick="check(this)">JS</button>
+    <button onclick="check(this)">VanillaJS</button>
+    <button onclick="check(this)" class="correct">Java</button>
+
+    What does the C stands in CSS?
+    <button onclick="check(this)" class="correct">Cascading</button>
+    <button onclick="check(this)">Cat</button>
+    <button onclick="check(this)">Cake</button>
+
+    <script>
+        function check(button){
+            console.log(button)
+
+            if(button.textContent == "Java"){
+                
+                button.style.background = "green";
+
+            }else{ 
+
+                button.style.background = "red";
+
+            }
+        }
+    </script>
     
 </body>
 </html>
